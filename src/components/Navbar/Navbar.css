@@ -1,0 +1,128 @@
+/* Navbar Header */
+.navbar-header {
+  background-color: #D7F5DC;
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+
+/* Nav Links */
+.nav-link {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  font-style: bold !important;
+  color: #000000 !important;
+  padding: 8px 12px !important;
+  transition: opacity 0.2s ease;
+}
+
+.nav-link:hover {
+  opacity: 0.7;
+}
+
+.dropdown-toggle::after {
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 8px;
+}
+
+.dropdown-item {
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  font-size: 14px;
+  padding: 10px 20px;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Login Button */
+.btn-login {
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+  border: 2px solid #20B15A;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 8px 24px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #20B15A;
+  color: #ffffff;
+}
+
+/* Register Button */
+.btn-register {
+  font-family: "Poppins", sans-serif;
+  background-color: #20B15A;
+  border: 2px solid #20B15A;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 8px 24px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn-register:hover {
+  background-color: #20B15A;
+  border-color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+}
+.dropdown-toggle::after{
+  display:none !important;
+}
+
+/* Mobile Responsive */
+@media (max-width: 991px) {
+  .navbar-nav {
+    margin-top: 20px;
+    gap: 10px !important;
+  }
+
+  .btn-login,
+  .btn-register {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+
+  .nav-link {
+    padding: 12px 0 !important;
+  }
+}
+
+/* Gap between nav items */
+.navbar-nav.gap-4 {
+  gap: 1.5rem;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav.gap-4 {
+    gap: 0.5rem !important;
+  }
+}

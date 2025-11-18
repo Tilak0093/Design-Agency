@@ -1,0 +1,149 @@
+.hero-container {
+  background-color: #D7F5DC; /* Light mint green background */
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.hero-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.get-started-btn {
+  font-family: "Poppins", sans-serif;
+  background-color: #20B15A; /* Green button */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.get-started-btn:hover {
+  background-color: #219653;
+}
+
+.hero-image-container {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.main-image {
+  border-radius: 8px;
+}
+
+/* Logos section */
+.logos-section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 60px;
+  padding: 40px 0;
+  background-color: white;
+  border-top: 1px solid #e0e0e0;
+}
+
+.logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Responsive design */
+@media (max-width: 992px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .hero-text {
+    max-width: 100%;
+  }
+  
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .logos-section {
+    gap: 40px;
+  }
+  
+  .logo {
+    height: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    padding: 40px 15px;
+  }
+  
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .get-started-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .logos-section {
+    gap: 30px;
+  }
+  
+  .logo {
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .logos-section {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+}

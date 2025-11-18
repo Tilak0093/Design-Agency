@@ -1,0 +1,134 @@
+.subscribe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  background-color: #ffffff;
+  min-height: 400px;
+}
+
+.subscribe-content {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.subscribe-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #10B981;
+  letter-spacing: 2px;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+}
+
+.subscribe-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 16px 0;
+  line-height: 1.3;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+}
+
+.subscribe-description {
+  font-size: 16px;
+  color: #6B7280;
+  margin: 0 0 40px 0;
+  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+}
+
+.subscribe-input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 600px;
+  max-height: 70px;
+  margin: 0 auto;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.email-input {
+  flex: 1;
+  padding: 16px 20px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #000000;
+  background-color: transparent;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+}
+
+.email-input::placeholder {
+  color: #9CA3AF;
+}
+
+.email-input:focus {
+  outline: none;
+}
+
+.subscribe-button {
+  padding: 10px;
+  margin: 10px;
+  background-color: #F55F1D;
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  border-radius: 10px;
+  max-width: 130px;
+  max-height:53px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+}
+
+.subscribe-button:hover {
+  background-color: #E64A19;
+}
+
+.subscribe-button:active {
+  background-color: #D84315;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .subscribe-container {
+    padding: 60px 20px;
+  }
+
+  .subscribe-title {
+    font-size: 28px;
+  }
+
+  .subscribe-description {
+    font-size: 14px;
+  }
+
+  .subscribe-input-wrapper {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .email-input {
+    width: 100%;
+    border-bottom: 1px solid #E5E7EB;
+  }
+
+  .subscribe-button {
+    width: 100%;
+    padding: 14px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .subscribe-title {
+    font-size: 24px;
+  }
+}
