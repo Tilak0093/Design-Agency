@@ -65,8 +65,8 @@ const Portfolio = () => {
               </div>
             </div>
 
-            {/* Card 4 */}q
-            <div className="col-lg-6 ">
+            {/* Card 4 */}
+            <div className="col-lg-6">
               <div className="portfolio-card">
                 <div className="card-image-wrapper">
                   <img src={card4} alt="Digital Marketing Agency Website" className="card-image" />

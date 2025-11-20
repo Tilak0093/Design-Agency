@@ -21,6 +21,7 @@
 }
 
 .section-title {
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   color: #10b981;
   font-weight: 600;
@@ -30,6 +31,7 @@
 }
 
 .section-subtitle {
+  font-family: "Poppins", sans-serif;
   font-size: 36px;
   font-weight: 700;
   color: #111827;
@@ -62,34 +64,37 @@
   border-color: #10b981;
 }
 
-/* Testimonial Cards */
-.testimonial-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
+.nav-button:active {
+  transform: scale(0.95);
 }
 
+/* Swiper Container */
+.testimonial-swiper {
+  padding-bottom: 60px;
+  overflow: hidden;
+}
+
+/* Testimonial Cards */
 .testimonial-card {
   background: white;
   border-radius: 16px;
   padding: 32px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   border: 1px solid #f3f4f6;
-  flex: 1;
-  min-width: 320px;
-  max-width: 380px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  height: 100%;
 }
 
 .testimonial-card:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
 }
 
 .testimonial-text {
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 1.6;
   color: #374151;
@@ -117,6 +122,7 @@
 }
 
 .user-name {
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: #111827;
@@ -124,9 +130,35 @@
 }
 
 .user-title {
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   color: #6b7280;
   margin: 0;
+}
+
+/* Swiper Pagination Styles */
+.testimonial-swiper .swiper-pagination {
+  bottom: 0;
+}
+
+.testimonial-swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #d1d5db;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.testimonial-swiper .swiper-pagination-bullet-active {
+  background: #10b981;
+  width: 32px;
+  border-radius: 6px;
+}
+
+/* Swiper Slide */
+.testimonial-swiper .swiper-slide {
+  height: auto;
+  display: flex;
 }
 
 /* Responsive Design */
@@ -149,15 +181,13 @@
     margin-top: 16px;
   }
 
-  .testimonial-cards {
-    flex-direction: column;
-    align-items: center;
+  .testimonial-card {
+    padding: 24px;
   }
 
-  .testimonial-card {
-    width: 100%;
-    max-width: 500px;
-    min-width: auto;
+  .nav-button {
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -167,7 +197,7 @@
   }
 
   .testimonial-card {
-    padding: 24px;
+    padding: 20px;
   }
 
   .nav-button {
@@ -178,5 +208,27 @@
   .nav-button img {
     width: 20px;
     height: 20px;
+  }
+
+  .testimonial-swiper {
+    padding-bottom: 50px;
+  }
+
+  .testimonial-text {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .avatar {
+    width: 48px;
+    height: 48px;
+  }
+
+  .user-name {
+    font-size: 16px;
+  }
+
+  .user-title {
+    font-size: 13px;
   }
 }
