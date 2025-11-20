@@ -31,7 +31,8 @@ const Herosection = () => {
       </div>
       
       {/* Logos section */}
-      <div className="logos-section">
+      <div style={{background:'white'}}>
+      <div className="logos-section container d-flex justify-content-around ">
         <div className="logo-item">
           <img src={google} alt="Google" className="logo" />
         </div>
@@ -47,6 +48,7 @@ const Herosection = () => {
         <div className="logo-item">
           <img src={slack} alt="Slack" className="logo" />
         </div>
+      </div>
       </div>
     </div>
   );

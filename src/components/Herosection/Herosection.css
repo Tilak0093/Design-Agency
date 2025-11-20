@@ -15,7 +15,6 @@
 
 .hero-text {
   flex: 1;
-  max-width: 500px;
 }
 
 .hero-title {
@@ -68,7 +67,6 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 60px;
   padding: 60px;
   color: #F8FFF9;
   background-color: white;
